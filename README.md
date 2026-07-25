@@ -98,7 +98,7 @@ AI / LLM integration             ███████████████�
 Frontend (Vue / React / Next.js) ████████████████████    Deep · 5y Vue in insurance, SaaS platforms
 Backends (Node.js + Python)      ████████████████████    Deep · Fastify, FastAPI, Express, Django
 Databases                        ██████████████████      Solid · PostgreSQL, Prisma, Redis, Supabase
-ML fundamentals                  ██████                  Learning · Phase 0 of a dedicated ML path
+ML fundamentals                  ████████                Learning · Phase 2 of 7 — classical ML, ~40h in public
 ```
 
 ---
