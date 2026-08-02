@@ -1,0 +1,55 @@
+---
+title: Journal — Phase 2, Classical ML
+---
+
+# Journal — Phase 2: Classical ML
+
+> **Status:** ▶ In progress · ~40 hours in · scikit-learn &amp; XGBoost
+>
+> This is a living entry — I update it as I move through the phase.
+
+## Goal of this phase
+
+Get genuinely comfortable with classical ML end-to-end: framing a problem,
+preparing data, training and tuning a model, and — the part tutorials skip —
+knowing *why* a model behaves the way it does and whether to trust it.
+
+## What I've covered so far
+
+- **Regression** — linear &amp; polynomial, regularization (Ridge / Lasso), and
+  reading residuals instead of just chasing R².
+- **Classification** — logistic regression, k-NN, decision boundaries, and why
+  accuracy lies on imbalanced data.
+- **Trees &amp; ensembles** — decision trees, random forests, gradient boosting
+  with XGBoost. Bias/variance made concrete.
+- **The workflow around the model** — train/validation/test discipline,
+  cross-validation, leakage traps, and feature scaling.
+- **Evaluation** — precision/recall, ROC-AUC, confusion matrices, and picking a
+  metric that matches the actual problem.
+
+## Things that finally clicked
+
+- **Regularization is just "don't trust any one feature too much."** Seeing Lasso
+  zero out coefficients made it concrete in a way the equations never did.
+- **Boosting = learning from your own mistakes, literally.** Each tree fits the
+  residual the last one left behind. Explaining that out loud to the voice agent
+  is where it locked in.
+- **The metric is a product decision, not a math one.** Optimizing accuracy on a
+  95/5 split is how you ship a model that predicts "no" every time and looks great.
+
+## Still shaky (being honest)
+
+- Intuition for **when gradient boosting overfits** vs. when to keep adding
+  trees — I lean on early stopping but want the feel, not just the callback.
+- **Hyperparameter search** beyond grid/random — Bayesian methods are on the list.
+
+## Up next
+
+Wrapping Phase 2 with a small end-to-end project on a real dataset, then into
+**Phase 3 — deep learning foundations**: neural nets from scratch before touching
+PyTorch.
+
+---
+
+_Want the short version, or to quiz me on any of this? Ask my AI. ✦ ·
+[Back to the roadmap](/learning)_

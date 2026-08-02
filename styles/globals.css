@@ -1,0 +1,128 @@
+/* ── Site-wide overrides on top of nextra-theme-docs ─────────────────── */
+
+:root {
+  --brand: #d97757;
+  --brand-deep: #b85c3e;
+}
+
+/* Hero block used on the landing page (index.mdx) */
+.hero {
+  padding: 2.5rem 0 1rem;
+}
+.hero h1 {
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  margin: 0 0 0.75rem;
+}
+.hero .tagline {
+  font-size: clamp(1.05rem, 2.2vw, 1.3rem);
+  opacity: 0.75;
+  max-width: 40ch;
+  margin: 0 0 1.75rem;
+}
+
+.cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 1.5rem 0 2.5rem;
+}
+.cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.65rem 1.15rem;
+  border-radius: 0.6rem;
+  font-weight: 600;
+  text-decoration: none !important;
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+.cta:hover {
+  transform: translateY(-1px);
+}
+.cta-primary {
+  background: var(--brand);
+  color: #fff !important;
+  box-shadow: 0 4px 14px rgba(217, 119, 87, 0.35);
+}
+.cta-secondary {
+  border: 1px solid rgba(128, 128, 128, 0.35);
+  color: inherit !important;
+}
+
+/* Card grid — reused for skills, learning path, project cards */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+.card {
+  display: block;
+  padding: 1.15rem 1.25rem;
+  border: 1px solid rgba(128, 128, 128, 0.2);
+  border-radius: 0.8rem;
+  text-decoration: none !important;
+  color: inherit !important;
+  transition: border-color 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
+  background: rgba(128, 128, 128, 0.03);
+}
+.card:hover {
+  border-color: var(--brand);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+.card h3 {
+  margin: 0 0 0.4rem;
+  font-size: 1.05rem;
+}
+.card p {
+  margin: 0;
+  font-size: 0.9rem;
+  opacity: 0.72;
+  line-height: 1.5;
+}
+.card .card-kicker {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--brand);
+  margin-bottom: 0.5rem;
+}
+
+/* Progress bars — "experience depth at a glance" */
+.depth {
+  margin: 1.5rem 0;
+  display: grid;
+  gap: 0.85rem;
+}
+.depth-row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.3rem;
+}
+.depth-row .depth-label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+.depth-row .depth-label span:last-child {
+  font-weight: 400;
+  opacity: 0.65;
+}
+.depth-bar {
+  height: 8px;
+  border-radius: 999px;
+  background: rgba(128, 128, 128, 0.18);
+  overflow: hidden;
+}
+.depth-bar > i {
+  display: block;
+  height: 100%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--brand), var(--brand-deep));
+}
