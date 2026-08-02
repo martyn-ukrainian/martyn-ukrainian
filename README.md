@@ -10,7 +10,7 @@ I'm learning ML in the open with a method I've been developing: **Claude Code as
 
 Explaining out loud catches what reading doesn't. 10 minutes of voice reflection after each lesson turns notes into knowledge.
 
-**→ [Join the journey — Claude Mentor](https://github.com/peacepeacecreation/claude-mentor)**
+**→ [Join the journey — Claude Mentor](https://github.com/martyn-ukrainian/claude-mentor)**
 
 ---
 
@@ -119,5 +119,5 @@ ML fundamentals                  ████████                Learnin
 
 ### 📬 Get in touch
 
-- 📧 **peacepeacecreation@gmail.com**
+- 📧 **ukrainianmartyn@gmail.com**
 - 💬 **Telegram:** [@ukrainianmartyn](https://t.me/ukrainianmartyn)
