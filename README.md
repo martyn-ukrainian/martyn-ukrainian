@@ -4,6 +4,7 @@ Software developer, 9 years in. Learning in public — building an ML engineerin
 
 **Open Source:**
 - **[voice-agent-skills](https://github.com/martyn-ukrainian/voice-agent-skills)** — Claude Code skills for local, terminal-based voice agents on Pipecat (Deepgram STT → LLM → Cartesia TTS)
+- **[termcast](https://github.com/martyn-ukrainian/termcast)** — narrated terminal screencasts as bash — types commands like a human and speaks the narration (Piper / Cartesia); ships a Claude Code skill
 - **[raspberry-pi-lora-greenhouse-monitoring](https://github.com/martyn-ukrainian/raspberry-pi-lora-greenhouse-monitoring)** — LoRa greenhouse monitoring on Raspberry Pi · Python/FastAPI + ESP32/C++ firmware + Telegram alerts
 - **[roy](https://github.com/martyn-ukrainian/roy)** — realtime backend + self-hosted ML for autonomous systems
 
