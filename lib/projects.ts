@@ -35,8 +35,10 @@ export const projects: Project[] = [
     stack: ['Bash', 'Piper', 'Cartesia', 'Claude Code skill'],
     repo: 'https://github.com/martyn-ukrainian/termcast',
     media: {
-      kind: 'none',
-      hint: 'Video with sound — the spoken narration is the whole point. Record a scenario performing itself.',
+      kind: 'cast',
+      src: '/demos/termcast.cast',
+      caption:
+        'The real engine performing examples/coding-agent.sh. Silent here — the narration is spoken aloud when you run it.',
     },
   },
   {

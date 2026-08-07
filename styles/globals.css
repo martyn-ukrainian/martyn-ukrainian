@@ -194,7 +194,13 @@
   aspect-ratio: 16 / 10;
   background: #12100f;
 }
-.pv-cast,
+/* A playing cast sizes itself from its own rows/cols — no fixed box to fit. */
+.pv-body-fluid {
+  aspect-ratio: auto;
+}
+.pv-cast {
+  width: 100%;
+}
 .pv-video {
   position: absolute;
   inset: 0;

@@ -5,9 +5,12 @@ import { projects, type Project, type ProjectMedia } from '../lib/projects'
       identical whether a demo exists yet or not. ──────────────────────────── */
 function Frame({
   label,
+  fluid,
   children,
 }: {
   label: string
+  /** Let the content set its own height instead of holding a 16:10 box. */
+  fluid?: boolean
   children: React.ReactNode
 }) {
   return (
@@ -16,7 +19,7 @@ function Frame({
         <i /> <i /> <i />
         <span>{label}</span>
       </div>
-      <div className="pv-body">{children}</div>
+      <div className={fluid ? 'pv-body pv-body-fluid' : 'pv-body'}>{children}</div>
     </div>
   )
 }
@@ -44,11 +47,12 @@ function CastPlayer({ src, label }: { src: string; label: string }) {
 
     import('asciinema-player').then((mod) => {
       if (disposed || !mount.current) return
+      // fit: 'width' lets the cast fill the frame and pick its own height —
+      // 'both' would letterbox any recording whose shape is not 16:10.
       player = mod.create(src, mount.current, {
         autoPlay: true,
-        fit: 'both',
+        fit: 'width',
         idleTimeLimit: 2,
-        terminalFontSize: '13px',
         theme: 'asciinema',
       })
     })
@@ -60,7 +64,7 @@ function CastPlayer({ src, label }: { src: string; label: string }) {
   }, [playing, src])
 
   return (
-    <Frame label={label}>
+    <Frame label={label} fluid={playing}>
       {playing ? (
         <div className="pv-cast" ref={mount} />
       ) : (

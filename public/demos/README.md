@@ -17,7 +17,7 @@ bundle and every video use lazy loading.
 
 | Project | Format | Why |
 | --- | --- | --- |
-| termcast | video + audio | The spoken narration is the product |
+| termcast | cast (done) — video + audio would be better | The typing is visible; the narration is not |
 | voice-agent-skills | video + audio | You have to hear the agent answer |
 | roy | asciinema cast | Telemetry, detections and alerts are all text |
 | RPLGM | video | The hardware in the greenhouse is the story |
@@ -32,6 +32,25 @@ asciinema rec public/demos/roy.cast --cols 100 --rows 26 --idle-time-limit 2
 
 Keep it to `--cols 100` or narrower — the player scales to fit, and anything
 wider turns to mush on a phone. `.cast` files are plain JSON, typically 20–80 KB.
+
+Without asciinema installed, `scripts/record-cast.py` does the same job for a
+non-interactive command — it drives it through a pty, so the real timing is
+preserved:
+
+```bash
+python3 scripts/record-cast.py <script.sh> public/demos/<name>.cast [cols] [rows]
+```
+
+`termcast.cast` was made that way, from termcast's own example scenario:
+
+```bash
+python3 scripts/record-cast.py \
+    ~/development/termcast/examples/coding-agent.sh public/demos/termcast.cast
+```
+
+The recorder sets `VOICE=0 AUTO=1`, so the scenario drives itself and stays
+silent — narration is audio and cannot survive into a cast. The `🎙` subtitle
+lines a scenario prints do survive, so the commentary is still readable.
 
 ## Recording a video
 
