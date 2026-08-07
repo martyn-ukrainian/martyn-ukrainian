@@ -1,4 +1,5 @@
 import 'nextra-theme-docs/style.css'
+import 'asciinema-player/dist/bundle/asciinema-player.css'
 import '../styles/globals.css'
 import type { AppProps } from 'next/app'
 import { AskAssistant } from '../components/AskAssistant'

@@ -4,14 +4,13 @@ description: Portfolio and open ML-engineering journal by Martyn — 9 years shi
 ---
 
 import { openAskAssistant } from '../components/AskAssistant'
+import { ProjectShowcase } from '../components/ProjectShowcase'
 
 <div className="hero">
 
 # Hi, I'm Martyn 👋
 
-<p className="tagline">
-Software developer, 9 years in. Deep in <strong>voice AI &amp; realtime telephony</strong> — now learning <strong>ML engineering in the open</strong>.
-</p>
+<p className="tagline">Software developer, 9 years in. Deep in <strong>voice AI &amp; realtime telephony</strong> — now learning <strong>ML engineering in the open</strong>.</p>
 
 <div className="cta-row">
   <a className="cta cta-primary" href="/learning">Explore my ML journey →</a>
@@ -54,28 +53,9 @@ Software developer, 9 years in. Deep in <strong>voice AI &amp; realtime telephon
 
 ## Open source
 
-<div className="card-grid">
-  <a className="card" href="https://github.com/martyn-ukrainian/voice-agent-skills" target="_blank" rel="noreferrer">
-    <span className="card-kicker">Claude Code · Voice</span>
-    <h3>voice-agent-skills ↗</h3>
-    <p>Skills for local, terminal-based voice agents on Pipecat — Deepgram STT → LLM → Cartesia TTS.</p>
-  </a>
-  <a className="card" href="https://github.com/martyn-ukrainian/termcast" target="_blank" rel="noreferrer">
-    <span className="card-kicker">CLI · Claude Code</span>
-    <h3>termcast ↗</h3>
-    <p>Narrated terminal screencasts as bash — types commands like a human and speaks the narration (Piper / Cartesia). Ships a Claude Code skill that scripts a demo from a plain-language topic.</p>
-  </a>
-  <a className="card" href="https://github.com/martyn-ukrainian/raspberry-pi-lora-greenhouse-monitoring" target="_blank" rel="noreferrer">
-    <span className="card-kicker">IoT · Python</span>
-    <h3>lora-greenhouse ↗</h3>
-    <p>LoRa greenhouse monitoring on Raspberry Pi — FastAPI + ESP32/C++ firmware + Telegram alerts.</p>
-  </a>
-  <a className="card" href="https://github.com/martyn-ukrainian/roy" target="_blank" rel="noreferrer">
-    <span className="card-kicker">Realtime · ML</span>
-    <h3>roy ↗</h3>
-    <p>Realtime backend + self-hosted ML for autonomous systems.</p>
-  </a>
-</div>
+<p className="tagline" style={{ maxWidth: '52ch', marginBottom: 0 }}>Four things I build and maintain in the open — each one shown running, not just described.</p>
+
+<ProjectShowcase />
 
 ## 🚀 Learning ML in the open
 
@@ -123,6 +103,4 @@ I'm learning ML with a method I've been building: **Claude Code as mentor + a vo
 - 💬 **Telegram:** [@ukrainianmartyn](https://t.me/ukrainianmartyn)
 - 🐙 **GitHub:** [martyn-ukrainian](https://github.com/martyn-ukrainian)
 
-<p style={{ opacity: 0.6, fontSize: '0.9rem', marginTop: '2rem' }}>
-  Curious about anything? Hit <strong>⌘/</strong> or the bar at the bottom and ask my AI. ✦
-</p>
+<p style={{ opacity: 0.6, fontSize: '0.9rem', marginTop: '2rem' }}>Curious about anything? Hit <strong>⌘/</strong> or the bar at the bottom and ask my AI. ✦</p>

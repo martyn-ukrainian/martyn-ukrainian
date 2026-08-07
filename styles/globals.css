@@ -93,6 +93,202 @@
   margin-bottom: 0.5rem;
 }
 
+/* ── Project showcase — media + write-up rows (components/ProjectShowcase) ── */
+.projects {
+  display: grid;
+  gap: 3.5rem;
+  margin: 2rem 0 3rem;
+}
+.project {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+  gap: 2rem;
+  align-items: center;
+}
+.project:nth-child(even) .project-media {
+  order: 2;
+}
+.project-copy h3 {
+  margin: 0 0 0.6rem;
+  font-size: 1.4rem;
+  letter-spacing: -0.02em;
+}
+.project-copy p {
+  margin: 0;
+  font-size: 0.94rem;
+  line-height: 1.6;
+  opacity: 0.75;
+}
+.project-caption {
+  margin: 0.6rem 0 0;
+  font-size: 0.8rem;
+  opacity: 0.6;
+}
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 1.1rem;
+}
+.chips li {
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 0.22rem 0.6rem;
+  border-radius: 999px;
+  border: 1px solid rgba(128, 128, 128, 0.3);
+  opacity: 0.8;
+}
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+.project-links a {
+  color: var(--brand) !important;
+  text-decoration: none !important;
+}
+.project-links a:hover {
+  text-decoration: underline !important;
+}
+.projects-note {
+  margin: 0;
+  font-size: 0.85rem;
+  opacity: 0.6;
+  text-align: center;
+}
+
+/* Terminal-window chrome wrapping every demo, recorded or not */
+.pv-frame {
+  border: 1px solid rgba(128, 128, 128, 0.25);
+  border-radius: 0.75rem;
+  overflow: hidden;
+  background: #12100f;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
+}
+.pv-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.5rem 0.75rem;
+  background: rgba(255, 255, 255, 0.06);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+.pv-bar i {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.22);
+}
+.pv-bar span {
+  margin-left: 0.5rem;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.72rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+.pv-body {
+  position: relative;
+  aspect-ratio: 16 / 10;
+  background: #12100f;
+}
+.pv-cast,
+.pv-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+.pv-video {
+  object-fit: cover;
+  background: #12100f;
+}
+.pv-faux {
+  position: absolute;
+  inset: 0;
+  margin: 0;
+  padding: 1rem 1.1rem;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.82rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.45);
+  background: none;
+  border: 0;
+  overflow: hidden;
+}
+.pv-caret {
+  display: inline-block;
+  width: 0.55em;
+  height: 1em;
+  vertical-align: -0.15em;
+  background: var(--brand);
+  animation: pv-blink 1.1s step-end infinite;
+}
+@keyframes pv-blink {
+  50% {
+    opacity: 0;
+  }
+}
+.pv-play {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  width: 100%;
+  border: 0;
+  background: rgba(18, 16, 15, 0.35);
+  color: #fff;
+  font: inherit;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+.pv-play:hover {
+  background: rgba(18, 16, 15, 0.15);
+}
+.pv-play-icon {
+  display: grid;
+  place-items: center;
+  width: 3.2rem;
+  height: 3.2rem;
+  padding-left: 0.2rem;
+  border-radius: 50%;
+  background: var(--brand);
+  box-shadow: 0 6px 20px rgba(217, 119, 87, 0.45);
+  font-size: 1.1rem;
+}
+.pv-pending {
+  position: absolute;
+  inset: auto 0 0 0;
+  display: grid;
+  gap: 0.25rem;
+  padding: 1rem 1.1rem;
+  background: linear-gradient(transparent, rgba(18, 16, 15, 0.92) 45%);
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 0.78rem;
+  line-height: 1.5;
+}
+.pv-pending strong {
+  color: var(--brand);
+  font-size: 0.82rem;
+}
+
+@media (max-width: 860px) {
+  .project {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+  .project:nth-child(even) .project-media {
+    order: 0;
+  }
+}
+
 /* Progress bars — "experience depth at a glance" */
 .depth {
   margin: 1.5rem 0;

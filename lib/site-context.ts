@@ -1,5 +1,6 @@
 import fs from 'node:fs'
 import path from 'node:path'
+import { projects } from './projects'
 
 let _cached: string | null = null
 
@@ -40,6 +41,18 @@ export function getSiteContext(): string {
     }
   }
   walk(pagesDir, '')
+
+  // Project write-ups live in TS, not MDX — the landing page renders them
+  // through <ProjectShowcase />, so feed them in explicitly.
+  const projectDocs = projects
+    .map(
+      (p) =>
+        `### ${p.name} (${p.kicker})\n${p.blurb}\nStack: ${p.stack.join(', ')}\nRepo: ${p.repo}`,
+    )
+    .join('\n\n')
+  sections.push(
+    `\n\n=== / (open-source projects, rendered on the landing page) ===\n${projectDocs}`,
+  )
 
   _cached = sections.join('\n')
   return _cached

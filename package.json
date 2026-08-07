@@ -10,6 +10,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "asciinema-player": "^3.17.0",
     "gray-matter": "^4.0.3",
     "next": "^14.2.35",
     "nextra": "^3.3.1",

@@ -40,11 +40,25 @@ learning journal, using every MDX page + `README.md` as its context.
 | `pages/learning/phase-2-classical-ml.mdx` | Journal entry (template for new ones) |
 | `pages/api/chat.ts` | Anthropic-backed streaming chat endpoint |
 | `components/AskAssistant.tsx` | Slide-in chat panel + floating ask bar |
+| `components/ProjectShowcase.tsx` | Open-source section — demo player + write-up per project |
 | `components/Logo.tsx` | Brand mark |
+| `lib/projects.ts` | Project copy + which demo file each one plays |
+| `public/demos/` | The recordings, plus a guide to making them |
 | `lib/site-context.ts` | Loads all MDX + README into the AI's system prompt |
 | `theme.config.tsx` | Nextra theme (branding, colors, nav) |
 | `styles/globals.css` | Hero / card / progress-bar styles |
 | `pages/_meta.tsx` | Top-level nav order + external links |
+
+## Adding a project demo
+
+Record it, drop it in `public/demos/`, and point the project's `media` field in
+`lib/projects.ts` at the file — `{ kind: 'cast' }` for an asciinema recording,
+`{ kind: 'video' }` for MP4/WebM. Until then it shows a "demo coming soon"
+placeholder of the same size, so the layout never shifts. Recording commands
+and size limits are in [`public/demos/README.md`](./public/demos/README.md).
+
+Nothing loads until a visitor presses play: the asciinema player bundle is a
+dynamic import and videos are `preload="none"`.
 
 ## Adding a journal entry
 

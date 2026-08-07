@@ -127,6 +127,7 @@ export function AskAssistant() {
       {isOpen && (
         <aside
           aria-label="Ask Martyn's assistant"
+          data-ask-assistant=""
           style={{
             position: 'fixed',
             top: 0,
@@ -243,13 +244,16 @@ export function AskAssistant() {
           </form>
         </aside>
       )}
+      {/* Keep this CSS free of apostrophes and angle brackets — React escapes
+          them server-side but not client-side, which breaks hydration. Hence
+          the data attribute selector rather than the aria-label. */}
       <style>{`
         @keyframes slide-in {
           from { transform: translateX(100%); }
           to { transform: translateX(0); }
         }
         @media (prefers-color-scheme: dark) {
-          aside[aria-label="Ask Martyn's assistant"] {
+          aside[data-ask-assistant] {
             --chat-bg: #111111;
             --chat-fg: #ededed;
           }
