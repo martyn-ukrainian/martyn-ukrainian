@@ -18,6 +18,8 @@ Explaining out loud catches what reading doesn't. 10 minutes of voice reflection
 
 **→ [Join the journey — Claude Mentor](https://github.com/martyn-ukrainian/claude-mentor)**
 
+**→ [Live progress dashboard](https://martyn-ukrainian.github.io/claude-mentor/)** — 100+ hours of tracked practice, hours per phase, roadmap completion. Rebuilt from the real time log, not self-reported.
+
 ---
 
 ### 🧠 AI / ML
