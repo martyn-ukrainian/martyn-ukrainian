@@ -2,6 +2,9 @@
 
 Software developer, 9 years in. Learning in public — building an ML engineering path openly on GitHub.
 
+**🦿 Now building [Hektor](https://huggingface.co/collections/MartynU/hektor-6acf6e1b68113d1b37701ad8)**, a six-legged robot on ESP32-S3 (C++/ESP-IDF, 18 servos, voice over WebRTC).
+First release: 🤗 **[hektor-micro-wakeword-esp32](https://huggingface.co/MartynU/hektor-micro-wakeword-esp32)**, an 87 KB on-device Ukrainian wake word for ESP32 with 95.5 % live recall.
+
 **Open Source:**
 - **[voice-agent-skills](https://github.com/martyn-ukrainian/voice-agent-skills)** — Claude Code skills for local, terminal-based voice agents on Pipecat (STT → LLM → TTS)
 - **[termcast](https://github.com/martyn-ukrainian/termcast)** — narrated terminal screencasts as bash — types commands like a human and speaks the narration (Piper / Cartesia); ships a Claude Code skill
