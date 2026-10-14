@@ -7,9 +7,9 @@ Software developer, 9 years in. Learning in public — building an ML engineerin
 - **[termcast](https://github.com/martyn-ukrainian/termcast)** — narrated terminal screencasts as bash — types commands like a human and speaks the narration (Piper / Cartesia); ships a Claude Code skill
 - **[RPLGM](https://github.com/martyn-ukrainian/raspberry-pi-lora-greenhouse-monitoring)** — LoRa greenhouse monitoring on Raspberry Pi · Python/FastAPI + ESP32/C++ firmware + Telegram alerts
 - **[roy](https://github.com/martyn-ukrainian/roy)** — realtime backend + self-hosted ML for autonomous systems
-- **[hektor-micro-wakeword-esp32](https://huggingface.co/MartynU/hektor-micro-wakeword-esp32)** — microWakeWord model for the Ukrainian wake word «Гектор» on ESP32 · 87 KB, trained on ~21k clips (TTS, voice clones, live recordings via the robot's mic) · 95.5 % live recall
 
-**Models on Hugging Face:** [![Hugging Face](https://img.shields.io/badge/-MartynU-FFD21E?logo=huggingface&logoColor=black)](https://huggingface.co/MartynU)
+**Models** [![Hugging Face](https://img.shields.io/badge/-MartynU-FFD21E?logo=huggingface&logoColor=black)](https://huggingface.co/MartynU)**:**
+- **[hektor-micro-wakeword-esp32](https://huggingface.co/MartynU/hektor-micro-wakeword-esp32)** — microWakeWord model for the Ukrainian wake word «Гектор» on ESP32 · 87 KB, trained on ~21k clips (TTS, voice clones, live recordings via the robot's mic) · 95.5 % live recall
 
 ---
 
