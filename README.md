@@ -11,6 +11,8 @@ First release: 🤗 **[hektor-micro-wakeword-esp32](https://huggingface.co/Marty
 - **[RPLGM](https://github.com/martyn-ukrainian/raspberry-pi-lora-greenhouse-monitoring)** — LoRa greenhouse monitoring on Raspberry Pi · Python/FastAPI + ESP32/C++ firmware + Telegram alerts
 - **[roy](https://github.com/martyn-ukrainian/roy)** — realtime backend + self-hosted ML for autonomous systems
 
+**Models on Hugging Face:** [![Hugging Face](https://img.shields.io/badge/-MartynU-FFD21E?logo=huggingface&logoColor=black)](https://huggingface.co/MartynU)
+
 ---
 
 ### 🚀 Start learning ML with me
