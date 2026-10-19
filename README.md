@@ -9,10 +9,12 @@
 Software developer, 9 years in. Learning in public — building an ML engineering path openly on GitHub.
 
 **Open Source:**
-- **[voice-agent-skills](https://github.com/martyn-ukrainian/voice-agent-skills)** — Claude Code skills for local, terminal-based voice agents on Pipecat (STT → LLM → TTS)
-- **[termcast](https://github.com/martyn-ukrainian/termcast)** — narrated terminal screencasts as bash — types commands like a human and speaks the narration (Piper / Cartesia); ships a Claude Code skill
-- **[RPLGM](https://github.com/martyn-ukrainian/raspberry-pi-lora-greenhouse-monitoring)** — LoRa greenhouse monitoring on Raspberry Pi · Python/FastAPI + ESP32/C++ firmware + Telegram alerts
 - **[hektor-wakeword](https://github.com/martyn-ukrainian/hektor-wakeword)** — how the Ukrainian wake word «Гектор» was built for an ESP32 robot: TTS + voice-clone + live data with provenance, three microWakeWord runs on Colab, device-like evaluation (59 % → 73 % → 95.5 % live recall)
+- **[RPLGM](https://github.com/martyn-ukrainian/raspberry-pi-lora-greenhouse-monitoring)** — LoRa greenhouse monitoring on Raspberry Pi · Python/FastAPI + ESP32/C++ firmware + Telegram alerts
+
+**Claude Code Skills:**
+- **[voice-agent-skills](https://github.com/martyn-ukrainian/voice-agent-skills)** — `voice-agent` scaffolds a local voice agent that runs in the terminal on Pipecat (STT → LLM → TTS); `voice-agent-flow` generates its scenarios: tutor, ELI5, English practice, mock interview
+- **[termcast](https://github.com/martyn-ukrainian/termcast)** — `terminal-demo` turns a topic into a narrated terminal screencast: types commands like a human and speaks the narration (Piper / Cartesia)
 
 **Models:**
 - **[hektor-micro-wakeword-esp32](https://huggingface.co/MartynU/hektor-micro-wakeword-esp32)** — microWakeWord model for the Ukrainian wake word «Гектор» on ESP32 · 87 KB, trained on ~21k clips (TTS, voice clones, live recordings via the robot's mic) · 95.5 % live recall
