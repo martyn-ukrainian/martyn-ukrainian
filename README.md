@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/martyn.gif" alt="Martyn at the workbench" width="800">
+</p>
+
 ### Hi, I'm Martyn 👋
 
 [![Hugging Face](https://img.shields.io/badge/_-FFD21E?logo=huggingface&logoColor=black&style=flat-square "Hugging Face")](https://huggingface.co/MartynU) [![Telegram](https://img.shields.io/badge/_-26A5E4?logo=telegram&logoColor=white&style=flat-square "Telegram")](https://t.me/ukrainianmartyn) [![Email](https://img.shields.io/badge/_-EA4335?logo=gmail&logoColor=white&style=flat-square "Email")](mailto:ukrainianmartyn@gmail.com)
