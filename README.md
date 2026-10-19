@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/martyn.gif" alt="Martyn at the workbench" width="800">
+  <img src="assets/martyn.gif" alt="Martyn at the workbench" width="640">
 </p>
 
 ### Hi, I'm Martyn 👋
@@ -9,8 +9,8 @@
 Software developer, 9 years in. Learning in public — building an ML engineering path openly on GitHub.
 
 **Open Source:**
-- **[hektor-wakeword](https://github.com/martyn-ukrainian/hektor-wakeword)** — how the Ukrainian wake word «Гектор» was built for an ESP32 robot: TTS + voice-clone + live data with provenance, three microWakeWord runs on Colab, device-like evaluation (59 % → 73 % → 95.5 % live recall)
 - **[RPLGM](https://github.com/martyn-ukrainian/raspberry-pi-lora-greenhouse-monitoring)** — LoRa greenhouse monitoring on Raspberry Pi · Python/FastAPI + ESP32/C++ firmware + Telegram alerts
+- **[hektor-wakeword](https://github.com/martyn-ukrainian/hektor-wakeword)** — how the Ukrainian wake word «Гектор» was built for an ESP32 robot: TTS + voice-clone + live data with provenance, three microWakeWord runs on Colab, device-like evaluation (59 % → 73 % → 95.5 % live recall)
 
 **Claude Code Skills:**
 - **[voice-agent-skills](https://github.com/martyn-ukrainian/voice-agent-skills)** — `voice-agent` scaffolds a local voice agent that runs in the terminal on Pipecat (STT → LLM → TTS); `voice-agent-flow` generates its scenarios: tutor, ELI5, English practice, mock interview
