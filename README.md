@@ -19,6 +19,7 @@ Software developer, 9 years in. Learning in public — building an ML engineerin
 
 **Models:**
 - **[hektor-micro-wakeword-esp32](https://huggingface.co/MartynU/hektor-micro-wakeword-esp32)** — microWakeWord model for the Ukrainian wake word «Гектор» on ESP32 · 87 KB, trained on ~21k clips (TTS, voice clones, live recordings via the robot's mic) · 95.5 % live recall
+- **[esp32-clap-detection](https://huggingface.co/MartynU/esp32-clap-detection)** — clap / not-a-clap classifier for ESP32-S3 + INMP441 · logistic regression over 8 hand-made spectral features, 100 bytes, plain C on the board · trained only on clips recorded through the device's own mic
 
 ---
 
