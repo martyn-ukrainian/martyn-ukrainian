@@ -11,6 +11,7 @@ Software developer, 9 years in. Learning in public — building an ML engineerin
 **Open Source:**
 - **[RPLGM](https://github.com/martyn-ukrainian/raspberry-pi-lora-greenhouse-monitoring)** — LoRa greenhouse monitoring on Raspberry Pi · Python/FastAPI + ESP32/C++ firmware + Telegram alerts
 - **[hektor-micro-wakeword-esp32](https://github.com/martyn-ukrainian/hektor-micro-wakeword-esp32)** — how the Ukrainian wake word «Гектор» was built for an ESP32 robot: TTS + voice-clone + live data with provenance, three microWakeWord runs on Colab, device-like evaluation (59 % → 73 % → 95.5 % live recall)
+- **[esp32-clap-detection](https://github.com/martyn-ukrainian/esp32-clap-detection)** — two claps toggle the light: ESP32-S3 + INMP441 decides on-device with a 100-byte logistic regression over 8 hand-made sound features, trained on clips recorded through the board's own mic · ESP-IDF/C++ firmware + FastAPI on Raspberry Pi + local Tuya lamps, no cloud
 
 **Claude Code Skills:**
 - **[voice-agent-skills](https://github.com/martyn-ukrainian/voice-agent-skills)** — `voice-agent` scaffolds a local voice agent that runs in the terminal on Pipecat (STT → LLM → TTS); `voice-agent-flow` generates its scenarios: tutor, ELI5, English practice, mock interview
