@@ -141,5 +141,6 @@ ML fundamentals                  ████████                Learnin
 
 ### 📬 Get in touch
 
-- 📧 **ukrainianmartyn@gmail.com**
+- 📧 **Work:** maksym2025@gmail.com
+- 📧 **Personal:** ukrainianmartyn@gmail.com
 - 💬 **Telegram:** [@ukrainianmartyn](https://t.me/ukrainianmartyn)
